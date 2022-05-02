@@ -21,6 +21,19 @@ Kata.getMiddle("A") should return "A"
 // The middle character(s) of the word represented as a string.
 
 //SOLUTION
+function getMiddle(s) {
+    const stringArray = s.split('');
+    const stringLength = stringArray.length;
+    const half = stringArray / 2;
+
+    if (stringLength % 2 === 0) {
+        return stringArray[half - 1] + stringArray[half]
+    } else {
+        return stringArray[half]
+    }
+}
+
+
 function getMiddle(string) {
     const stringArray = string.split('')
     const isLengthEven = string.length % 2 === 0
