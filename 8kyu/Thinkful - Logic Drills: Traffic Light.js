@@ -8,3 +8,4 @@ For example, update_light('green') should return 'yellow'.
 
 const updateLight = current =>
   current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green'
+  
