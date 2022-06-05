@@ -15,11 +15,6 @@ The test cases contain numbers only by mistake.
 
 
 // SOLUTION
-const correct = string =>
-  string
-    .split('')
-    .map(char => {
-      const corrections = { '0': 'O', '5': 'S', '1': 'I' }
-      return corrections[char] || char
-    })
-    .join('')
+function correct(string) {
+    return string.replace(/0/g, "O").replace(/5/g, "S").replace(/1/g, "I");
+}
