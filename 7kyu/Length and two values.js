@@ -12,7 +12,7 @@ function alternate(n, firstValue, secondValue) {
             arr.push(secondValue)
         }
     }
-    return arr
+    return arr;
 }
 
 // Alt. Solutions
