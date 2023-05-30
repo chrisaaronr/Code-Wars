@@ -16,3 +16,4 @@ function isTriangle(a, b, c){
 
     return area > 0
 }
+
