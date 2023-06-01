@@ -31,50 +31,20 @@
 // // SOLUTION
 
 //population at the beginning of the year
-const p0 = 1000
+p0
 
 //population growth
-const percent = 0.02
-const aug = 50
-let yearGrowth = (p0 + (p0 * percent) + aug
+percent / 100
 
 // goal to hit population greater or equal to; population to surpass
-let p >= 1200
-let n = 0
 
 //function should return number of years to get population >= p
-function nbYear (p0, percent, aug, p){
-    const p0 = 1000;
-    const percent = 0.02;
-    let result = p0
-    let n = 0
-    
-    while (result < p) {
-        result += result * percent + aug
-        n++
-    }
-
-    return n
-
-    let yearGrowth = (p0 + (p0 * percent) + aug;
-    
-    return yearGrowth;
-    
-    if (p >= 1200){
-        return n
-    }    
-}
-
-
 function nbYear(p0, percent, aug, p) {
-    const percentage = percent / 100
-    let result = p0
-    let years = 0
-  
-    while (result < p) {
-      result += result * percentage + aug
-      years++
+    let years = 0;  
+    for (years; p0 < p; years++) {
+      p0 += Math.floor(p0 * (percent / 100) + aug);
     }
-  
-    return years
+    return years;
+    
+      
   }
